@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aung Ye Zaw</string>
+    <string name="app_name">အောင်ရဲဇော်</string>
     <string name="hello_world">Hello World!!!</string>
     <string name="btnOne">ONE</string>
     <string name="btnTwo">TWO</string>
@@ -22,4 +22,6 @@ To reach Oeschinensee from Zurich it will take about 2.5 hours on the train or 2
 
 Mediavine
 I backpacked around Switzerland by using trains and buses. They are very efficient, have good coverage and are also very damn expensive. What I did is bought the Swiss Half-Fare Card, which gives you half price off any ticket (except some cable cars) It basically pays itself off within five days so if you are there for a week you NEED it. If you are looking to move across the country quickly and doing some big train journeys they will be more than $100 USD sometimes. Many people get the Swiss Travel Pass, which is pretty expensive about $100 USD a day but gives you unlimited free travel and half price on many cable cars. I’d say get the Swiss Half-Fare Pass for sure but don’t rush into the full Swiss Travel Pass until you have mapped out your route.  The other alternative if you are traveling all over Europe you should look into how to save money with the Eurail Pass, which could be an even better option than the Swiss-specific train passes. </string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="todo">TODO</string>
 </resources>

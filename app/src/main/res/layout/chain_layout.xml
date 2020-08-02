@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="One"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnb"
+
+        />
+    <Button
+        android:id="@+id/btnb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintBaseline_toBaselineOf="@id/btna"
+        app:layout_constraintLeft_toRightOf="@+id/btna"
+        app:layout_constraintRight_toLeftOf="@+id/btnc"
+        />
+    <Button
+        android:id="@+id/btnc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnb"
+        app:layout_constraintLeft_toRightOf="@+id/btnb"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:id="@+id/btnd"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Four"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/btnb"
+        app:layout_constraintBottom_toTopOf="@+id/btne"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:id="@+id/btne"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Five"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintBottom_toTopOf="@+id/btnf"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnd"
+        />
+    <Button
+        android:id="@+id/btnf"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Six"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btne"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
